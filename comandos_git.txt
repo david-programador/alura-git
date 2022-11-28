@@ -1,0 +1,65 @@
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+git --version (para verificar a versão instalada do git)
+
+git init (para inicializar um repositório no git)
+
+git status (para algumas informações, como se foi realizado algum commit ou se teve alguma modificação em algum arquivo)
+
+
+git add <file> (para adicionar um arquivo ao repositório)
+
+git add . (para adicionar todos os arquivos de uma vez)
+
+git rm --cached <file> (para remover arquivos que foram adicionados)
+
+(suponhamos que eu tenha feito alteração em algum arquivo
+ eu preciso colocar git add <o nome do arquivo> depois dar o git commit -m "Colocar um comentário")
+
+git log (para mostrar o histórico de commits do seu projeto)
+
+git config --local (para modificar configurações só nesse projeto)
+git config --global (para modificar configurações de todo o computador)
+
+git config --local user.name "David Torres" (para mudar o nome)
+
+git config --local user.name (para visualizar o nome configurado)
+
+git config --local user.email "davidribeirotorres@gmail.com" (para configurar o email)
+
+git config --local user.email (para visualizar o email configurado)
+
+git log --oneline (para visulizar os commits de forma resumida)
+
+git log -p (para vermos o que foi alterado nos arquivos e as informações dos commits)
+
+IMPORTANTE (após digitar o comando git log -p para voltar o cmd ao normal apertar a tecla q)
+
+https://devhints.io/git-log (site contendo vários exemplos de comandos do git)
+
+*Como ignorar arquivos: 
+(para fazer com que o git ignore um arquivo da pasta local
+devemos criar um arquivo na pasta com a nomeclatura .gitignore
+e dentro dele adicionamos os nomes dos arquivos que não queremos
+que o git fique monitorando, importante precisamos subir o arquivo git ignore no nosso repositório
+git add .gitignore 
+git commit -m "Adicionando .gitignore")
+
+*Para subir o projeto para o GitHub
+
+1.Crie um repositório no site do GitHub
+2.Mude para a opção HTTPS (caso não esteja)
+3.Digite no cmd: 
+
+git remote add origin <link do repositório do GitHub>
+
+git push -u origin main (o -u ele deixa definido 
+para o repositório que você quer enviar e a brach que você está enviando, 
+e da próxima vez você só precisará digitar o 
+git push porque já estará definido, mas você pode simplesmente tirar o "-u" e sempre 
+digitar o "git push origin main", ou seja 
+sempre mostrando o repositório que você quer enviar e a brach que você está enviando)
+
+
+
