@@ -62,5 +62,13 @@ git push porque já estará definido, mas você pode simplesmente tirar o "-u" e
 digitar o "git push origin main", ou seja 
 sempre mostrando o repositório que você quer enviar e a brach que você está enviando)
 
+*Como remover um arquivo de um repositório:
+
+git rm <file>
+
+git commit -m "file.txt removido"
+
+git push
+
 
 
