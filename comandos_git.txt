@@ -1,5 +1,6 @@
 git config --local user.name "Seu nome aqui"
 git config --local user.email "seu@email.aqui"
+git config credential.username "new name"
 
 git --version (para verificar a versão instalada do git)
 
