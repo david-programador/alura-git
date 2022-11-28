@@ -70,6 +70,7 @@ git commit -m "file.txt removido"
 
 git clone <link do repositório>
 
+git pull (para atualizar o nosso projeto)
 
 
 
