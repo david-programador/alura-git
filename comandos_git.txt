@@ -68,7 +68,6 @@ git rm <file>
 
 git commit -m "file.txt removido"
 
-git push
 
 
 
