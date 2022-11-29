@@ -72,5 +72,87 @@ git clone <link do repositório>
 
 git pull (para atualizar o nosso projeto)
 
+git branch (para mostrar as banchs e mostrar em qual estamos)
+
+git branch <nome da branch> (para criar uma branch)
+
+git checkout <nome da branch> (para entrar sair de uma branch e entrar em outra)
+
+git checkout -b (crio uma branch e já entro nela)
+
+git merge <nome da branch> (para realizar o merge da branch digitada para a que você esta atual)
+
+git log --graph (para visualizar as linhas especificas de desenvolvimento)
+
+git rebase <nome da branch> (ele atualiza sem perder o histórico de modificações, ele unie a branch atual com a branch digitada)
+
+*Diferença entre o merge e o rebase:
+O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual.
+
+
+-- -------------------------------------------------------------------
+
+*Revertendo alterações, nós tópicos abaixo detalhamos alguns pontos de revertendo alterações:
+
+o git checkout nós desfazemos uma alteração que ainda não foi adicionada ao index ou stage, ou seja, antes do git add. Depois de adicionar com git add, para desfazer uma alteração, precisamos tirá-la deste estado, com git reset. Agora, se já realizamos o commit, o comando git revert pode nos salvar.
+
+-- -------------------------------------------------------------------
+
+Sunponhamos que eu tenha rodado o git add e 
+adicionado um arquivo para ser commitado e 
+queira desfazer, para isso podemos utilizar o git reset HEAD <file>
+(o HEAD aqui significa local de trabalho então esse arquivo vai voltar
+para o meu local de trabalho)
+
+-- -------------------------------------------------------------------
+
+*Como podemos desfazer um commit:
+
+primeiro rodamos o
+
+git log
+
+que irá trazer o hash do commit e então 
+com essa identificação reverter ele em especifico
+
+git revert <hash>
+
+exemplo:
+
+git revert 9839cc5114af348c18115333f400d5d9b1c215ef
+
+-- ----------------------------------------------------------------
+*Salvar temporariamente, para só depois commitar:
+
+git stash (ele salva temporariamente todas as alterações feitas nos arquivos, 
+é uma opção para quer não quer commitar ainda e já quer passar para outra atividade)
+
+git stash list (retorna uma lista com todas as mudanças que estão salvas temporariamente)
+
+git stash apply <numero da stash salva> (para aplicar as mudanças salvas temporariamente)
+
+Mas mesmo depois de aplicarmos elas, elas continuam lá
+por isso precisamos rodar o comando:
+
+git stash drop (para remover as stash salvas temporariamente)
+
+Tem um comando que aplica as mudanças que estão salvas temporariamente e deleta da memória
+
+git stash pop (aplica a última mudança salva temporariamente e depois deleta da memória)
+
+-- ----------------------------------------------------------------------------------------------------
+
+*Viajando no tempo (é possível voltamos para um commit anterior e a partir dele criamos outra branch)
+
+primeiro rode o comando git log --oneline ele mostrará um pedaço dos hash dos commits e a partir
+desse pedaço (que já o identifica como único), podemos voltar para esse commit:
+
+git checkout <hash> (voltará para o commit indicado)
+
+E depois podemos criar outra branch
+
+
+
+
 
 
