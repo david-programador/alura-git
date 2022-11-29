@@ -166,6 +166,17 @@ vemos isso até do:
 git diff
 
 -- ----------------------------------------------------------------------------------------------------
+*Uma tag marca um marco na minha aplicação, eu posso marcar um commit como um ponto de versão do código
+exemplo, se eu quiser disser que a partir de um commit é a versão 1.0 do meu projeto:
+
+git tag -a <versão> -m "Escreva uma mensagem, exemplo está é a primeira vesão (BETA)"
+
+git tag (lista todas as tags, todas as versões)
+
+git push origin <versão> (para subirmos a tag para o git, ele aparece na aba release no git)
+
+
+
 
 
 
