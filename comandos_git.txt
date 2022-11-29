@@ -149,7 +149,26 @@ desse pedaço (que já o identifica como único), podemos voltar para esse commi
 
 git checkout <hash> (voltará para o commit indicado)
 
-E depois podemos criar outra branch
+E depois podemos criar outra branch utilizando o comando git checkout - b <criar um novo nome para a branch>
+
+-- ----------------------------------------------------------------------------------------------------
+
+*Ver alterações desde um determinado commit até outro, 
+podemos visualizar isso através do comando:
+
+git diff <desde hash do commit> .. <até o hash do commit>
+
+-- ----------------------------------------------------------------------------------------------------
+
+*Ver o que foi alterado e ainda não foi commitado,
+vemos isso até do:
+
+git diff
+
+-- ----------------------------------------------------------------------------------------------------
+
+
+
 
 
 
