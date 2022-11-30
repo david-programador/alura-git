@@ -2,6 +2,8 @@ git config --local user.name "Seu nome aqui"
 git config --local user.email "seu@email.aqui"
 git config credential.username "new name"
 
+(ao invés de --local podemos usar o --global para configurar para toda a máquina)
+
 git --version (para verificar a versão instalada do git)
 
 git init (para inicializar um repositório no git)
